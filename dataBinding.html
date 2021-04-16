@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+</head>
+<body>
+<!-- 단방향은 v-bind 양방향은 v-model -->
+    <div id="start">
+        <input type="text" name=""  v-model:value="text">
+        <h1>{{text}}</h1>
+    </div>
+
+    <script type = "text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data() {
+                return{
+                    text: 'hello'
+                }
+            }
+        })
+    </script>
+    
+</body>
+</html>

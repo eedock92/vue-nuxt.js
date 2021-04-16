@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>      --> 
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+</head>
+<body>
+    <h1>Vue Life Cycle</h1>
+    <div id="start"></div>
+    <script type = " text/javascript">
+
+        var app = new Vue({
+            el : '#start',
+            created () {
+                console.log('created')
+            },
+            beforeCreate () {
+                console.log('beforeCreated')
+            },
+            mounted () {
+                console.log('mounted' )
+            },
+            beforeMount () {
+                console.log('beforeMounted')
+            }
+        });
+        
+    </script>
+</body>
+</html>

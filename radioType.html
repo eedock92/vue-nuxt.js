@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 시작하기!!</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+</head>
+<body>
+    <div id="start">
+        <div>
+            <input type="radio" value="1" v-model="pick">
+            <label>1</label>
+            <input type="radio" value="2" v-model="pick">
+            <label>2</label>
+            <input type="radio" value="3" v-model="pick">
+            <label>3</label>
+
+            <br>
+            <h1>체크리스트 : {{pick}}</h1>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let app = new Vue({
+            el : '#start',
+            data() {
+                return {
+                    pick: ''
+                }
+            }
+        });
+    </script>
+</body>
+</html>
